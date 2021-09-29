@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan minggu 3</title>
+    </head>
+    <body>
+        <h2 align="center">HTML Video</h2><hr>
+        <video width="400" controls>
+            <source src="media/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <br>
+
+        <h2 align="center">HTML Audio</h2><hr>
+        <!--Playing audio-->
+        <h4>playing audio</h4>
+        <audio controls>
+            <source src="media/horse.ogv" type="audio/ogg">
+        </audio>
+        <!--Autoplay audio-->
+        <h4>autoplay audio</h4>
+        <audio controls autoplay>
+            <source src="media/horse.ogv" type="audio/ogg">
+        </audio>
+        <!--Autoplay dan muted audio-->
+        <h4>autoplay dan muted audio</h4>
+        <audio controls autoplay muted>
+            <source src="media/horse.ogv" type="audio/ogg">
+        </audio>
+        <br>
+
+        <h2 align="center">HTML Plugin</h2><hr>
+        <!--menampilkan pdf dengan tag <embed> -->
+        <h4>menampilkan pdf dengan tag embed</h4>
+        <embed width="600" height="400" src="media/jurnal.pdf" type="application/pdf"></embed>
+        <!--menampilkan pdf dengan tag <object> --> 
+        <h4>menampilkan pdf dengan tag object</h4>
+        <object width="600" height="400" data="media/jurnal.pdf"></object>  
+        <!--menampilkan file html-->
+        <h4>menampilkan file html</h4>
+        <object width="100%" height="500px" data="media/pantai.html"></object>
+        <!--menampilkan foto-->
+        <h4>menampilkan foto</h4>
+        <object data="media/tepi pantai.jpg"></object>
+        <br>
+
+        <h2 align="center">HTML YouTube</h2><hr>
+        <!--Playing youtube video-->
+        <h4>playing youtube</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M_MEj9JITBM"></iframe>
+        <!--Autoplay youtube video-->
+        <h4>autoplay youtube</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M_MEj9JITBM?autoplay=1&mute=1"></iframe>
+        <br>
+
+    </body>
+</html>
