@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir Pendaftaran PPDB</title>
+    </head>
+
+    <body style="height: 100%"></body>
+    
+    <style>
+        body{
+            margin: 50px 100px;
+            padding: 0px 30px;
+            background-color:#dfdfdf;  
+        }
+        .wrap{
+            width: 800px;
+            margin: 10px auto;
+            padding:1px
+        }
+    </style>
+
+    <div class="wrap" style="background-color: white;">
+        <h2 align="center">FORMULIR PENDAFTARAN PPDB JALUR ZONASI 2021</h2>
+        <form action="proses.php" method="POST" name="fformulir">
+            <table id="formulir" width="750">
+                <h3 style="background-color: burlywood;" align="center">INFO PENDAFTARAN</h3>
+                <tr>
+                    <td align="center" width="45">1.</td>
+                    <td><label for="fnisn">NISN</label></td>
+                    <td ><input type="number" id="fnisn" name="fnisn"></td>
+                </tr>
+                <tr>
+                    <td align="center">2.</td>
+                    <td><label for="fasalsekolah">Asal Sekolah</label></td>
+                    <td><input type="text" id="fasalsekolah" name="fasalsekolah"></td>
+                </tr>
+                <tr>
+                    <td align="center">3.</td>
+                    <td><label for="ftahunlulus">Tahun Lulus</label></td>
+                    <td><input type="number" id="ftahunlulus" name="ftahunlulus"></td>
+                    <td><h4>(lampirkan fotocopy ijazah)</h4></td>
+                </tr>
+            </table>
+
+            <table width="750">
+                <h3 style="background-color: burlywood;" align="center">DATA CALON PESERTA</h3>
+                <tr>
+                    <td align="center" width="45">4.</td>
+                    <td><label for="fnamalengkap">Nama Lengkap</label></td>
+                    <td><input type="text" id="fnamalengkap" name="fnamalengkap"></td>
+                    <tr>
+                        <td align="center">5.</td>
+                        <td><label for="fnik">NIK</label></td>
+                        <td><input type="number" id="fnik" name="fnik"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">6.</td>
+                        <td><label for="ftempatTanggal">Tempat,Tanggal lahir</label></td>
+                        <td><input type="text" id="ftempat" name="ftempat"></td>
+                        <td><input type="date" id="ftanggallahir" name="ftanggallahir"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">7.</td>
+                        <td><label for="fjeniskelamin">Jenis Kelamin</label></td>
+                        <td>
+                            <input type="radio" id="flaki" name="fjeniskelamin" value="flaki"><label for="laki">Laki-laki</label>
+                            <input type="radio" id="fperempuan" name="fjeniskelamin" value="fperempuan"><label for="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">8.</td>
+                        <td><label for="falamatpeserta">Alamat</label></td>
+                        <td><textarea id="falamatpeserta" name="falamatpeserta"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"></td>
+                        <td><h4>Foto Copy Akte Kelahiran Yang Telah Dilegalisir (Di Lampirkan)</h4></td>
+                    </tr>
+                    <tr>
+                        <td align="center">9.</td>
+                        <td><label for="fDesapeserta">Desa/Kel.</label></td>
+                        <td><input type="text" id="fDesapeserta" name="fDesapeserta"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">10.</td>
+                        <td><label for="fkecpeserta">Kecamatan</label></td>
+                        <td><input type="text" id="fkecpeserta" name="fkecpeserta"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">11.</td>
+                        <td><label for="fkabpeserta">Kabupaten</label></td>
+                        <td><input type="text" id="fkabpeserta" name="fkabpeserta"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">12.</td>
+                        <td><label for="fprovinsipeserta">Provinsi</label></td>
+                        <td><select id="fprovinsipeserta" name="fprovinsipeserta">
+                            <option>Pilih Provinsi</option>
+                            <option value="01">ACEH</option>
+                            <option value="02">BALI</option>
+                            <option value="03">BANTEN</option>
+                            <option value="04">BENGKULU</option>
+                            <option value="05">DI YOYGAKARTA</option>
+                            <option value="06">DKI JAKARTA</option>
+                            <option value="07">GORONTALO</option>
+                            <option value="08">JAMBI</option>
+                            <option value="09">JAWA BARAT</option>
+                            <option value="10">JAWA TENGAH</option>
+                            <option value="11">JAWA TIMUR</option>
+                            <option value="12">KALIMANTAN BARAT</option>
+                            <option value="13">KALIMANTAN SELATAN</option>
+                            <option value="14">KALIMANTAN TENGAH</option>
+                            <option value="15">KALIMANTAN TIMUR</option>
+                            <option value="16">KALIMANTAN UTARA</option>
+                            <option value="17">KEPULAUAN BANGKA BELITUNG</option>
+                            <option value="18">KEPULAUAN RIAU</option>
+                            <option value="19">LAMPUNG</option>
+                            <option value="20">MALUKU</option>
+                            <option value="21">MALUKU UTARA</option>
+                            <option value="22">NUSA TENGGARA BARAT</option>
+                            <option value="23">NUSA TENGGARA TIMUR</option>
+                            <option value="24">PAPUA</option>
+                            <option value="25">PAPUA BARAT</option>
+                            <option value="26">RIAU</option>
+                            <option value="27">SULAWESI BARAT</option>
+                            <option value="28">SULAWESI SELATAN</option>
+                            <option value="29">SULAWESI TENGAH</option>
+                            <option value="30">SULAWESI TENGGARA</option>
+                            <option value="31">SULAWESI UTARA</option>
+                            <option value="32">SUMATERA BARAT</option>
+                            <option value="33">SUMATERA SELATAN</option>
+                            <option value="34">SUMATERA UTARA</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td align="center">13.</td>
+                        <td><label for="femail">Email Aktif</label></td>
+                        <td><input type="text" id="femail" name="femail"></td>
+                    </tr>
+            </table>
+
+            <table width="750">
+                <h3 style="background-color: burlywood;" align="center">DATA ORANG TUA (lampirkan KK)</h3>
+                <tr>
+                    <td align="center" width="45">14.</td>
+                    <td><label for="fnomorKK">Nomor Kartu Keluarga</label></td>
+                    <td><input type="number" id="fnomorKK" name="fnomorKK"></td>
+                </tr>
+                <tr>
+                    <td align="center">15.</td>
+                    <td><label for="fnamaAyah">Nama Ayah Kandung</label></td>
+                    <td><input type="text" id="fnamaAyah" name="fnamaAyah"></td>
+                </tr>
+                <tr>
+                    <td align="center">16.</td>
+                    <td><label for="fagamaayah">Agama</label></td>
+                    <td><select id="fagamaayah" name="fagamaayah">
+                        <option>Pilih Agama</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="center">17.</td>
+                    <td><label for="fpekerjaanayah">Pekerjaan</label></td>
+                    <td><input type="text" id="fpekerjaanayah" name="fpekerjaanayah"></td>
+                </tr>
+                <tr>
+                    <td align="center">18.</td>
+                    <td><label for="fnamaIbu">Nama Ibu Kandung</label></td>
+                    <td><input type="text" id="fnamaIbu" name="fnamaIbu"></td>
+                </tr>
+                <tr>
+                    <td align="center">19.</td>
+                    <td><label for="fagamaibu">Agama</label></td>
+                    <td><select id="fagamaibu" name="fagamaibu">
+                        <option>Pilih Agama</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="center">20.</td>
+                    <td><label for="fpekerjaanibu">Pekerjaan</label></td>
+                    <td><input type="text" id="fpekerjaanibu" name="fpekerjaanibu"></td>
+                </tr>
+                <tr>
+                    <td align="center">21.</td>
+                    <td><label for="falamatortu">Alamat Orang Tua</label></td>
+                    <td><textarea id="falamatortu" name="falamatortu"></textarea></td>
+                <tr>
+                    <td align="center">22.</td>
+                    <td><label for="fdesaortu">Desa/Kel.</label></td>
+                    <td><input type="text" id="fdesaortu" name="fdesaortu"></td>
+                </tr>
+                <tr>
+                    <td align="center">23.</td>
+                    <td><label for="fkecortu">Kecamatan</label></td>
+                    <td><input type="text" id="fkecortu" name="fkecortu"></td>
+                </tr>
+                <tr>
+                    <td align="center">24.</td>
+                    <td><label for="fkabOrtu">Kabupaten</label></td>
+                    <td><input type="text" id="fkabOrtu" name="fkabOrtu"></td>
+                </tr>
+                <tr>
+                    <td align="center">25.</td>
+                    <td><label for="fprovinsiOrtu">Provinsi</label></td>
+                    <td><select id="fprovinsiOrtu" name="fprovinsiOrtu">
+                        <option>Pilih Provinsi</option>
+                        <option value="01">ACEH</option>
+                        <option value="02">BALI</option>
+                        <option value="03">BANTEN</option>
+                        <option value="04">BENGKULU</option>
+                        <option value="05">DI YOYGAKARTA</option>
+                        <option value="06">DKI JAKARTA</option>
+                        <option value="07">GORONTALO</option>
+                        <option value="08">JAMBI</option>
+                        <option value="09">JAWA BARAT</option>
+                        <option value="10">JAWA TENGAH</option>
+                        <option value="11">JAWA TIMUR</option>
+                        <option value="12">KALIMANTAN BARAT</option>
+                        <option value="13">KALIMANTAN SELATAN</option>
+                        <option value="14">KALIMANTAN TENGAH</option>
+                        <option value="15">KALIMANTAN TIMUR</option>
+                        <option value="16">KALIMANTAN UTARA</option>
+                        <option value="17">KEPULAUAN BANGKA BELITUNG</option>
+                        <option value="18">KEPULAUAN RIAU</option>
+                        <option value="19">LAMPUNG</option>
+                        <option value="20">MALUKU</option>
+                        <option value="21">MALUKU UTARA</option>
+                        <option value="22">NUSA TENGGARA BARAT</option>
+                        <option value="23">NUSA TENGGARA TIMUR</option>
+                        <option value="24">PAPUA</option>
+                        <option value="25">PAPUA BARAT</option>
+                        <option value="26">RIAU</option>
+                        <option value="27">SULAWESI BARAT</option>
+                        <option value="28">SULAWESI SELATAN</option>
+                        <option value="29">SULAWESI TENGAH</option>
+                        <option value="30">SULAWESI TENGGARA</option>
+                        <option value="31">SULAWESI UTARA</option>
+                        <option value="32">SUMATERA BARAT</option>
+                        <option value="33">SUMATERA SELATAN</option>
+                        <option value="34">SUMATERA UTARA</option>
+                        </select></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <button type="submit" name="kirim">Kirim</button>
+                    <button type="reset" name="reset">Batal</button>
+                </tr>
+            </table>
+        </form>
+    </div>
+</html>
