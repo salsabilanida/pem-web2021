@@ -1,0 +1,9 @@
+* {
+    border: 1px solid grey;
+}
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
